@@ -1,20 +1,19 @@
 # Performance Tests
 
-Project containing <a href="https://k6.io"><b>k6</b></a> scripts for many types of performance tests for Youse platform.
+Project containing scripts for example with <a href="https://k6.io"><b>k6</b></a> and <a href="https://github.com/grafana/k6-operator">K6 operator</a>
 
 ## How to install
 
 ### Clone repository:
 
 ```bash
-git clone git@...
+git clone https://github.com/DaianCosta/k6-operator-performance-test
 ```
 
 ### Install k6:
 
 ```bash
 Mac: brew install k6
-
 Windows: choco install k6
 ```
 
@@ -41,7 +40,7 @@ It's also possible to send k6 metrics to influxDB and visualize test results in 
 #### Preparing:
 
 ```bash
-docker-compose -f ./docker-compose.yaml up -d influxdb grafana
+docker-compose -f ./docker-compose.yaml up -d
 ```
 
 #### Running tests:
