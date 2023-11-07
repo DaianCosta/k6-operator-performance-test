@@ -1,0 +1,13 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: pizzafrontend
+  namespace: squad-test
+spec:
+  type: ClusterIP
+  selector:
+     app: pizzafrontend   
+  ports:
+    - port: 8080
+      targetPort: 80

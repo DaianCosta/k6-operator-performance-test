@@ -1,0 +1,21 @@
+apiVersion: k6.io/v1alpha1
+kind: TestRun
+metadata:
+  name: k6-too
+spec:
+  parallelism: 1
+  arguments: --out influxdb=http://my-influxdb.default:8086/test --tag testId=homeVu01
+  script:
+    localFile: /home/k6/src/scenarios/site/home.test.js
+  separate: false
+  runner:
+    image: desenvolvimentodaian/k6-operator:latest
+    metadata:
+      labels:
+        cool-label: foo
+      annotations:
+        cool-annotation: bar
+    securityContext:
+      runAsUser: 1000
+      runAsGroup: 1000
+      runAsNonRoot: true
