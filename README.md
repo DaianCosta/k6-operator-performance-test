@@ -138,7 +138,12 @@ Results
 #In past root
 cd ./k8s/app-demo
 kubectl apply -f ./
+
+kubectl port-forward service/pizzafrontend 7080:8080
 ```
+Inter DNS: http://pizzafrontend.squad-test.svc.cluster.local:8080
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/54a9378a-3cd5-4c5e-b046-f06c51cd30ab)
+
 
 ### Apply test scenarios:
 ```bash
@@ -152,5 +157,6 @@ kubectl apply -f ./
 - <a href="https://k6.io/docs">k6 docs</a>
 - <a href="https://github.com/grafana/k6-operator">K6 operator</a>
 - <a href="https://k6.io/docs/test-types/introduction">Test types</a>
+- <a href="https://macoratti.net/22/05/kubern_aspndeplo1.htm">Application for example Macorrati.net</a>
 
 
