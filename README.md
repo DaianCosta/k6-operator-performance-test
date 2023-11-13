@@ -138,6 +138,9 @@ Replace data-source-id created on this "K6-Tests-Report-k8s.json"  dashboard
 Import dashboard with this "K6-Tests-Report-k8s.json"
 ![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/6c1adfe1-348a-41eb-bb5c-65152a75d50e)
 
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/d40d72e1-1430-47ed-a74c-4c2abf95e31a)
+
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/8f516e2f-74cb-42c3-93dd-e669a28d6f69)
 
 ### Apply application for example:
 ```bash
@@ -154,6 +157,10 @@ Inter DNS: http://pizzafrontend.squad-test.svc.cluster.local:8080
 ```bash
 #In past root
 cd ./k8s/scenarios/site
+
+#if exists pod executed
+kubectl delete -f ./
+
 kubectl apply -f ./
 ```
 ![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/30b79649-e6b3-46a1-9976-58764164e68f)
