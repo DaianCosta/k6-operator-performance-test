@@ -142,8 +142,7 @@ kubectl apply -f ./
 kubectl port-forward service/pizzafrontend 7080:8080 -n squad-test
 ```
 Inter DNS: http://pizzafrontend.squad-test.svc.cluster.local:8080
-![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/54a9378a-3cd5-4c5e-b046-f06c51cd30ab)
-
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/23cc2a56-fd63-4bb3-8ef6-0145de418039)
 
 ### Apply test scenarios:
 ```bash
@@ -151,6 +150,9 @@ Inter DNS: http://pizzafrontend.squad-test.svc.cluster.local:8080
 cd ./k8s/scenarios/site
 kubectl apply -f ./
 ```
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/30b79649-e6b3-46a1-9976-58764164e68f)
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/9ee6b916-e1ec-4e0e-af27-ba97808b4cf9)
+
 
 ## Links
 
