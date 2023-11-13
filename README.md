@@ -109,6 +109,15 @@ show DATABASES; #must return the DATABASE test created
 Create a dataSource at Grafana
 host: http://my-influxdb.default:8086
 
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/1f456578-4746-4d0d-914a-8256c77ae736)
+
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/c97a7132-0acd-4939-82cc-c478aa5fe047)
+
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/c453614e-3081-4968-bb83-12e8acde7b00)
+
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/cb607a5c-0418-4af7-880b-a73a84fd9781)
+
+
 ## Links
 
 - <a href="https://k6.io/docs">k6 docs</a>
