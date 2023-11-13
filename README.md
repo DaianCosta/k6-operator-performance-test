@@ -54,6 +54,11 @@ docker-compose -f ./docker-compose.yaml run k6 run /src/scenarios/site/home.test
 ```bash
 http://localhost:3000/d/d2edbbbd-5313-451d-9904-c5e24c44dfd8/k6-tests-report?orgId=1&refresh=5s&from=now-15m&to=now
 ```
+#### update with more scenarios
+should updating you image with new scenarions
+```bash
+docker build -t desenvolvimentodaian/k6-operator -f Dockerfile-influx .
+```
 
 ## K6 operator
 Install Helm with 
