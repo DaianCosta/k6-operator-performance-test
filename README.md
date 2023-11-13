@@ -133,7 +133,19 @@ Selected a InfluxDB data source
 Results
 ![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/c240836b-86a1-45e7-bfe8-2643b6c5d1a0)
 
+### Apply application for example:
+```bash
+#In past root
+cd ./k8s/app-demo
+kubectl apply -f ./
+```
 
+### Apply test scenarios:
+```bash
+#In past root
+cd ./k8s/scenarios/site
+kubectl apply -f ./
+```
 
 ## Links
 
