@@ -62,21 +62,52 @@ Install Helm with
 choco install kubernetes-helm "Power Shell" as administrator
 ```
 
+Install k6-operator
 ```bash
 helm repo add grafana https://grafana.github.io/helm-charts
 helm repo update
 helm install k6-operator grafana/k6-operator
+```
 
-helm repo add influxdata https://helm.influxdata.com/
-helm install my-influxdb influxdata/influxdb --version 4.12.5
+## Grafana
+Install Grafana
 
+```bash
 helm repo add grafana https://grafana.github.io/helm-charts
 helm install my-grafana grafana/grafana --version 7.0.3
 ```
 
-## InfluxDb
-CREATE DATABASE test;
+Execute the command for access and get password of grafana inyour local machine
+```bash
+kubectl port-forward svc/my-grafana 8083:80
 
+kubectl get secret --namespace default my-grafana -o jsonpath="{.data.admin-password}" | base64 --decode
+```
+
+## InfluxDb
+Install InfluxDb
+
+```bash
+
+helm repo add influxdata https://helm.influxdata.com/
+helm install my-influxdb influxdata/influxdb --version 4.12.5
+
+```
+
+Execute the command for access the pod to creat the DataBase InfluxDB to collect datas
+```bash
+kubectl get pods
+
+#returned example "my-influxdb-0" 
+kubectl exec --stdin --tty my-influxdb-0 -- /bin/bash
+
+influx;
+CREATE DATABASE test;
+show DATABASES; #must return the DATABASE test created
+```
+
+Create a dataSource at Grafana
+host: http://my-influxdb.default:8086
 
 ## Links
 
