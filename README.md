@@ -117,6 +117,18 @@ host: http://my-influxdb.default:8086
 
 ![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/cb607a5c-0418-4af7-880b-a73a84fd9781)
 
+## Grafana - install dashboard
+Get
+
+Import dashboard
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/482d2e7d-d494-4eaf-bcd3-2afb3f8538a1)
+
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/0020dcdc-2068-4b71-8c0e-7585c6b0997c)
+
+Selected a InfluxDB data source
+![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/46527fd0-3465-4593-b351-2a983ad7f187)
+
+
 
 ## Links
 
