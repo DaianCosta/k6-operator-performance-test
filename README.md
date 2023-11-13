@@ -139,7 +139,7 @@ Results
 cd ./k8s/app-demo
 kubectl apply -f ./
 
-kubectl port-forward service/pizzafrontend 7080:8080
+kubectl port-forward service/pizzafrontend 7080:8080 -n squad-test
 ```
 Inter DNS: http://pizzafrontend.squad-test.svc.cluster.local:8080
 ![image](https://github.com/DaianCosta/k6-operator-performance-test/assets/1796109/54a9378a-3cd5-4c5e-b046-f06c51cd30ab)
